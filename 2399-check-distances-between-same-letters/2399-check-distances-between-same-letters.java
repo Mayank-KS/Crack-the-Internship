@@ -4,12 +4,8 @@ class Solution {
         {
             char c = (char)('a'+i);
             if(s.contains(String.valueOf(c)))
-            {
-                int k = s.indexOf(c);
-                int p = s.lastIndexOf(c);
-                if(p-k-1!=distance[i])
+                if(s.lastIndexOf(c)-s.indexOf(c)-1!=distance[i])
                     return false;
-            }
         }
         return true;
     }
