@@ -8,8 +8,8 @@ var subtractProductAndSum = function(n) {
     while(n!==0)
     {
         var temp=n%10;
-        p=p*temp;
-        s=s+temp;
+        p*=temp;
+        s+=temp;
         n=Math.floor(n/10);
     }
     return p-s;
