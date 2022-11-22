@@ -1,7 +1,7 @@
 class Solution {
     public boolean isHappy(int n) {
         int a=0;
-        while(n!=1 && a<100)
+        while(n!=1 && a<20)
         {
             a++;
             if(n/10==0 && (n*n)/10==0)
@@ -16,6 +16,6 @@ class Solution {
             }
             
         }
-        return a<100;
+        return a<20;
     }
 }
